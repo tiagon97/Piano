@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Gotu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+height: 100vh;
+background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(62,192,176,1) 47%, rgba(253,187,45,1) 100%);
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+h1{
+    position: absolute;
+    top: 3%;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Gotu', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 50px;
+}
+.piano{
+    display: flex;
+    
+}
+
+.blackKey{
+    height: 120px;
+    width: 35px;
+    background-color: black;
+    margin-left: -17.5px;
+    margin-right: -17.5px;
+    z-index: 1;
+    
+}
+ .key{
+    width: 80px;
+    height: 240px;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: inset 1px 1px 30px -5px rgba(0,0,0,0.4);
+    transition: .2s;
+}
+
+
+.active{
+    background-color: rgb(222, 222, 222);
+}
